@@ -110,7 +110,7 @@ module Spring
     end
 
     def server_command
-      ENV["SPRING_SERVER_COMMAND"] || "#{File.expand_path("../../../bin/spring", __FILE__)} server --background"
+      ENV["SPRING_SERVER_COMMAND"] || "bundle exec #{File.expand_path("../../../bin/spring", __FILE__)} server --background"
     end
   end
 end
